@@ -86,7 +86,8 @@ mkdir ~/Projects ~/Data
 ```
 
 # Autre
-## Numlock automatique
+## Numlock automatique avec clavier Microsoft
 ```bash
-sudo apt-get -y install numlockx
+sudo nano /etc/default/keyboard
+# Modifier XKBOPTIONS="" vers XKBOPTIONS="numpad:microsoft"
 ```
