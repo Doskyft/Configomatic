@@ -3,7 +3,14 @@
 ## Via apt
 ```bash
 sudo add-apt-repository universe
-sudo apt install git make apt-transport-https curl libfuse2 exa bat
+sudo apt install \
+   git \
+   make \
+   apt-transport-https \
+   curl \
+   libfuse2 \
+   exa \ # ls plus moderne
+   bat \ # cat plus moderne
 
 # Changement dans les nouvelles versions de gnome
 sudo apt install chrome-gnome-shell -> gnome-browser-connector
@@ -86,8 +93,21 @@ mkdir ~/Projects ~/Data
 ```
 
 # Autre
-## Numlock automatique avec clavier Microsoft
+
+## Numlock automatique
+[source](https://www.numetopia.fr/activer-la-touche-verr-num-au-demarrage-sur-ubuntu/)
+```bash
+sudo apt install dbus-x11 # Corrige en bug leurs du gsettings
+sudo -i # Pour passer en root
+xhost +SI:localuser:gdm # Donnez les droits de faire des connexions avec le serveur X à l’utilisateur gdm
+su gdm -s /bin/bash # Passez à l’utilisateur gdm
+gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
+exit
+```
+
+## Clavier Microsoft
 ```bash
 sudo nano /etc/default/keyboard
+
 # Modifier XKBOPTIONS="" vers XKBOPTIONS="numpad:microsoft"
 ```
