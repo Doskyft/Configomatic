@@ -178,3 +178,4 @@ mkdir ~/.icons ~/.themes
 ./install.sh -c Dark -c Light -t all -s default -i ubuntu -N default
 sudo ./tweaks.sh -g -b "/path/my-picture.jpg" 
 ```
+Ouvrire tweaks et modifier les themes par WhiteSur
