@@ -73,6 +73,7 @@ ssh-copy-id -i ~/.ssh/key_file user@ip
 ## Pour ne pas a avoir à lancer le serveur php en root
 ```bash
 sudo iptables -t nat -I OUTPUT -p tcp -d 127.0.0.1 --dport 80 -j REDIRECT --to-ports 8080
+sudo apt install iptables-persistent # Pour rendre la règle précédente persistente
 ```
 plus de détail [ici](https://serverfault.com/questions/112795/how-to-run-a-server-on-port-80-as-a-normal-user-on-linux)
 
