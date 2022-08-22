@@ -106,6 +106,7 @@ exit
 ```
 
 ## Clavier Microsoft
+[source](https://askubuntu.com/questions/57079/xubuntu-make-shiftnumpad-work-like-windows)
 ```bash
 sudo nano /etc/default/keyboard
 
