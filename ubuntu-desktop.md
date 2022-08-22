@@ -11,6 +11,7 @@ sudo apt install \
    libfuse2 \
    exa \ # ls plus moderne
    bat \ # cat plus moderne
+   zsh # bash plus moderne
 
 # Changement dans les nouvelles versions de gnome
 sudo apt install chrome-gnome-shell -> gnome-browser-connector
@@ -24,16 +25,18 @@ sudo mysql_secure_installation
 ```
 
 ## Autre
-- [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04)
-- [brave](https://brave.com/fr/download/)
-- [sshs](https://github.com/quantumsheep/sshs)
-- [slack](https://slack.com/intl/fr-fr/downloads/linux)
-- [jetbrains-tools](https://www.jetbrains.com/fr-fr/toolbox-app/) || [doc non officiel](https://thirddriver.medium.com/jetbrains-toolbox-the-best-way-to-install-intellij-idea-on-linux-53c1070cd03b)
-- [GitKraken](https://help.gitkraken.com/gitkraken-client/how-to-install/#deb)
-- [Spotify](https://www.spotify.com/fr/download/linux/)
-- [nvm - node et npm](https://github.com/nvm-sh/nvm)
-- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable)
-- [composer](https://getcomposer.org/download/)
+- [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04) <!-- language, dépendance pour d'autre app)
+- [brave](https://brave.com/fr/download/) <!-- Navigateur web -->
+- [sshs](https://github.com/quantumsheep/sshs) <!-- Gestionnaire de connexion ssh -->
+- [slack](https://slack.com/intl/fr-fr/downloads/linux) <!-- Méssagerie pro -->
+- [jetbrains-tools](https://www.jetbrains.com/fr-fr/toolbox-app/) || [doc non officiel](https://thirddriver.medium.com/jetbrains-toolbox-the-best-way-to-install-intellij-idea-on-linux-53c1070cd03b) # Pour installer tous les outils Jetbrains (PhpStorm, WebStorm, etc.)
+- [GitKraken](https://help.gitkraken.com/gitkraken-client/how-to-install/#deb) <!-- GUI pour git -->
+- [Spotify](https://www.spotify.com/fr/download/linux/) <!-- # Musique -->
+- [nvm - node et npm](https://github.com/nvm-sh/nvm) <!-- Gestionnaire de paquet javascript -->
+- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable) <!-- Gestionnaire de paquet javascript -->
+- [composer](https://getcomposer.org/download/) <!-- Gestionnaire de paquet PHP -->
+- [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh/wiki) <!-- Amélioration à Zsh -->
+- [Antigen](https://github.com/zsh-users/antigen) <!-- Amélioration à Zsh -->
 
 # Config
 
@@ -80,6 +83,43 @@ GRANT ALL PRIVILEGES ON *.* TO damien@localhost;
 FLUSH PRIVILEGES;
 ```
 
+## ZSH
+```bash
+chsh # Pour changer le shell par defaut répondre /bin/zsh
+nano ~/.zshrc # ajouter: source ~/.bash_aliases
+source ~/.zshrc
+```
+
+## Antigen
+```bash
+source /path-to-antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle lukechilds/zsh-nvm
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+antigen theme robbyrussell
+
+# Tell Antigen that you're done.
+antigen apply
+```
+
 # Gnome extension
 - [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
@@ -111,4 +151,30 @@ exit
 sudo nano /etc/default/keyboard
 
 # Modifier XKBOPTIONS="" vers XKBOPTIONS="numpad:microsoft"
+```
+
+## Alias
+```bash
+nano ~/.bash_aliases
+```
+
+```bash
+alias ls="exa -lah"
+alias cat="batcat"
+alias restart="reboot"
+```
+
+## Theme pour ubuntu
+```bash
+sudo apt install gnome-tweaks
+mkdir ~/.icons ~/.themes
+```
+- [WhiteSur-icon-theme](https://github.com/vinceliuice/WhiteSur-icon-theme)
+```bash
+./install.sh
+```
+- [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)
+```bash
+./install.sh -c Dark -c Light -t all -s default -i ubuntu -N default
+sudo ./tweaks.sh -g -b "/path/my-picture.jpg" 
 ```
