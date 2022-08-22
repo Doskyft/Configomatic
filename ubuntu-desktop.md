@@ -3,15 +3,7 @@
 ## Via apt
 ```bash
 sudo add-apt-repository universe
-sudo apt install \
-   git \
-   make \
-   apt-transport-https \
-   curl \
-   libfuse2 \
-   exa \ # ls plus moderne
-   bat \ # cat plus moderne
-   zsh # bash plus moderne
+sudo apt install git make apt-transport-https curl libfuse2 exa bat zsh
 
 # Changement dans les nouvelles versions de gnome
 sudo apt install chrome-gnome-shell -> gnome-browser-connector
@@ -23,6 +15,10 @@ sudo apt install php8.1 php8.1-zip php8.1-intl php8.1-xml php8.1-dom php8.1-curl
 sudo apt install mysql-server
 sudo mysql_secure_installation
 ```
+
+- exa => ls plus moderne
+- bat => cat plus moderne
+- sh => bash plus moderne
 
 ## Autre
 - [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04) <!-- language, dépendance pour d'autre app)
