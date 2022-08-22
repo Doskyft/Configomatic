@@ -16,9 +16,9 @@ sudo apt install mysql-server
 sudo mysql_secure_installation
 ```
 
-- exa => ls plus moderne
-- bat => cat plus moderne
-- sh => bash plus moderne
+- [exa => ls plus moderne](https://the.exa.website/)
+- [bat => cat plus moderne](https://github.com/sharkdp/bat)
+- [zsh => bash plus moderne](https://doc.ubuntu-fr.org/zsh)
 
 ## Autre
 - [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04) <!-- language, dépendance pour d'autre app) -->
