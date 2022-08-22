@@ -21,7 +21,7 @@ sudo mysql_secure_installation
 - sh => bash plus moderne
 
 ## Autre
-- [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04) <!-- language, dépendance pour d'autre app)
+- [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04) <!-- language, dépendance pour d'autre app) -->
 - [brave](https://brave.com/fr/download/) <!-- Navigateur web -->
 - [sshs](https://github.com/quantumsheep/sshs) <!-- Gestionnaire de connexion ssh -->
 - [slack](https://slack.com/intl/fr-fr/downloads/linux) <!-- Méssagerie pro -->
