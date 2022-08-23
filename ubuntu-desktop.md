@@ -22,18 +22,19 @@ sudo mysql_secure_installation
 - [tmux](https://doc.ubuntu-fr.org/tmux)
 
 ## Autre
-- [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04) <!-- language, dépendance pour d'autre app) -->
-- [brave](https://brave.com/fr/download/) <!-- Navigateur web -->
-- [sshs](https://github.com/quantumsheep/sshs) <!-- Gestionnaire de connexion ssh -->
-- [slack](https://slack.com/intl/fr-fr/downloads/linux) <!-- Méssagerie pro -->
-- [jetbrains-tools](https://www.jetbrains.com/fr-fr/toolbox-app/) || [doc non officiel](https://thirddriver.medium.com/jetbrains-toolbox-the-best-way-to-install-intellij-idea-on-linux-53c1070cd03b) # Pour installer tous les outils Jetbrains (PhpStorm, WebStorm, etc.)
-- [GitKraken](https://help.gitkraken.com/gitkraken-client/how-to-install/#deb) <!-- GUI pour git -->
-- [Spotify](https://www.spotify.com/fr/download/linux/) <!-- # Musique -->
-- [nvm - node et npm](https://github.com/nvm-sh/nvm) <!-- Gestionnaire de paquet javascript -->
-- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable) <!-- Gestionnaire de paquet javascript -->
-- [composer](https://getcomposer.org/download/) <!-- Gestionnaire de paquet PHP -->
-- [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh/wiki) <!-- Amélioration à Zsh -->
-- [Antigen](https://github.com/zsh-users/antigen) <!-- Amélioration à Zsh -->
+- [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04) *language, dépendance pour d'autre app)*
+- [brave](https://brave.com/fr/download/) *Navigateur web*
+- [sshs](https://github.com/quantumsheep/sshs) *Gestionnaire de connexion ssh*
+- [slack](https://slack.com/intl/fr-fr/downloads/linux) *Méssagerie pro*
+- [jetbrains-tools](https://www.jetbrains.com/fr-fr/toolbox-app/) || [doc non officiel](https://thirddriver.medium.com/jetbrains-toolbox-the-best-way-to-install-intellij-idea-on-linux-53c1070cd03b) *Pour installer tous les outils Jetbrains (PhpStorm, WebStorm, etc.)*
+- [GitKraken](https://help.gitkraken.com/gitkraken-client/how-to-install/#deb) *GUI pour git*
+- [Spotify](https://www.spotify.com/fr/download/linux/) *Musique*
+- [nvm - node et npm](https://github.com/nvm-sh/nvm) *Gestionnaire de paquet javascript*
+- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable) *Gestionnaire de paquet javascript*
+- [composer](https://getcomposer.org/download/) *Gestionnaire de paquet PHP*
+- [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh/wiki) *Amélioration à Zsh*
+- [Antigen](https://github.com/zsh-users/antigen) *Amélioration à Zsh*
+- [Postman](https://www.postman.com/downloads/)
 
 # Config
 
