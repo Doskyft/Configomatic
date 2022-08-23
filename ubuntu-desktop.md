@@ -3,7 +3,7 @@
 ## Via apt
 ```bash
 sudo add-apt-repository universe
-sudo apt install git make apt-transport-https curl libfuse2 exa bat zsh
+sudo apt install git make apt-transport-https curl libfuse2 exa bat zsh tmux
 
 # Changement dans les nouvelles versions de gnome
 sudo apt install chrome-gnome-shell -> gnome-browser-connector
@@ -19,6 +19,7 @@ sudo mysql_secure_installation
 - [exa => ls plus moderne](https://the.exa.website/)
 - [bat => cat plus moderne](https://github.com/sharkdp/bat)
 - [zsh => bash plus moderne](https://doc.ubuntu-fr.org/zsh)
+- [tmux](https://doc.ubuntu-fr.org/tmux)
 
 ## Autre
 - [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04) <!-- language, dépendance pour d'autre app) -->
@@ -35,6 +36,12 @@ sudo mysql_secure_installation
 - [Antigen](https://github.com/zsh-users/antigen) <!-- Amélioration à Zsh -->
 
 # Config
+
+## Fichier de config utilisateur
+Renommer les fichiers suivants:
+- `.bash_profile` en `.profile`
+- `.bash_aliases` en `.aliases`
+ce qui permet de les utiliser pour plusieurs shell
 
 ## Remplir ce fichier avec les hosts connu ce qui permettra a sshs de l'afficher
 ```
@@ -83,7 +90,7 @@ FLUSH PRIVILEGES;
 ## ZSH
 ```bash
 chsh # Pour changer le shell par defaut répondre /bin/zsh
-nano ~/.zshrc # ajouter: source ~/.bash_aliases
+nano ~/.zshrc # ajouter: source ~/.aliases
 source ~/.zshrc
 ```
 
@@ -115,6 +122,14 @@ antigen theme robbyrussell
 
 # Tell Antigen that you're done.
 antigen apply
+```
+
+## Tmux
+Ajouter dans le fichier .profile
+```bash
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
 ```
 
 # Gnome extension
