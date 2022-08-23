@@ -9,7 +9,7 @@ sudo apt install git make apt-transport-https curl libfuse2 exa bat zsh tmux
 sudo apt install chrome-gnome-shell -> gnome-browser-connector
 
 # PHP
-sudo apt install php8.1 php8.1-zip php8.1-intl php8.1-xml php8.1-dom php8.1-curl php8.1-mysql
+sudo apt install php8.1 php8.1-zip php8.1-intl php8.1-xml php8.1-dom php8.1-curl php8.1-mysql php8.1-mbstring
 
 # Mysql
 sudo apt install mysql-server
