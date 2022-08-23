@@ -36,6 +36,11 @@ sudo mysql_secure_installation
 - [Antigen](https://github.com/zsh-users/antigen) *Amélioration à Zsh*
 - [Postman](https://www.postman.com/downloads/)
 
+# Logiciel a désinstaller
+```bash
+sudo apt autoremove apache2
+```
+
 # Config
 
 ## Fichier de config utilisateur
