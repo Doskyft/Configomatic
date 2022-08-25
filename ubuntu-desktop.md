@@ -180,6 +180,10 @@ nano ~/.bash_aliases
 alias ls="exa -lah"
 alias cat="batcat"
 alias restart="reboot"
+alias untargz="tar -xvzf"
+
+alias pp="php -S localhost:8080 -t public"
+alias pc="php bin/console"
 ```
 
 ## Theme pour ubuntu
