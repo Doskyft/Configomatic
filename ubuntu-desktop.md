@@ -144,6 +144,7 @@ fi
 - [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 - [Color Picker](https://extensions.gnome.org/extension/3396/color-picker/)
 - [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
+- [Screenshot tool](https://extensions.gnome.org/extension/1112/screenshot-tool/)
 
 # Structuration dossier home
 ```bash
@@ -184,6 +185,8 @@ alias untargz="tar -xvzf"
 
 alias pp="php -S localhost:8080 -t public"
 alias pc="php bin/console"
+
+alias yw="yarn watch"
 ```
 
 ## Theme pour ubuntu
