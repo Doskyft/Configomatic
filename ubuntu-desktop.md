@@ -14,6 +14,9 @@ sudo apt install php8.1 php8.1-zip php8.1-intl php8.1-xml php8.1-dom php8.1-curl
 # Mysql
 sudo apt install mysql-server mysql-client
 sudo mysql_secure_installation
+
+# Gnome
+sudo apt install gnome-screenshot
 ```
 
 - [exa => ls plus moderne](https://the.exa.website/)
