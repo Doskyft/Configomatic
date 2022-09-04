@@ -3,7 +3,7 @@
 ## Via apt
 ```bash
 sudo add-apt-repository universe
-sudo apt install git make apt-transport-https curl libfuse2 exa bat zsh tmux
+sudo apt install git make apt-transport-https curl libfuse2 exa bat zsh tmux btop
 
 # Changement dans les nouvelles versions de gnome
 sudo apt install chrome-gnome-shell -> gnome-browser-connector
@@ -23,6 +23,7 @@ sudo apt install gnome-screenshot
 - [bat => cat plus moderne](https://github.com/sharkdp/bat)
 - [zsh => bash plus moderne](https://doc.ubuntu-fr.org/zsh)
 - [tmux](https://doc.ubuntu-fr.org/tmux)
+- [btop](https://github.com/aristocratos/btop)
 
 ## Autre
 - [go](https://go.dev/doc/install) || [doc non officiel](https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04) *language, dépendance pour d'autre app)*
