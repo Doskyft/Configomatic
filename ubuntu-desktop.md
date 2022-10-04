@@ -2,6 +2,7 @@
 
 ## Via apt
 ```bash
+sudo apt install software-properties-common
 sudo add-apt-repository universe
 sudo apt install git make apt-transport-https curl libfuse2 exa bat zsh tmux btop
 
