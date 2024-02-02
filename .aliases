@@ -1,1 +1,10 @@
+# Composer
 alias composer="docker run --rm --interactive --tty --volume $PWD:/app --volume ${COMPOSER_HOME:-$HOME/.composer}:/tmp composer"
+
+# PHP
+alias php70="docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app php:7.0-cli php"
+alias php72="docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app php:7.2-cli php"
+alias php74="docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app php:7.4-cli php"
+alias php80="docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app php:8.0-cli php"
+alias php82="docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app php:8.2-cli php"
+alias php83="docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app php:8.3-cli php"
